@@ -1,3 +1,6 @@
+<h1>This project was inspired by freecodecamp and motive of developing a personal portfolio Hey there Im Av to get my repo follow the given instructions</h1>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
