@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
+//import { CCard,CCardImage,CCardBody,CCardTitle,CCardText,CButton } from '@coreui/react'
 //import LogoTitle from '../../assets/images/logo-w.png'
-import Logo from './Logo'
+//import Logo from './Logo'
 import './index.scss'
 import Loader from 'react-loaders'
+import Card from '../Card'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['','A','r', 'a' , 'v', 'i', 'n', 'd']
-    const jobArray = ['F', 'u', 'l', 'l','', 's','t','a','c','k','','d', 'e','v','e','l','o','p','e','r','.']
+    const jobArray = ['E ','n','g','i','n','e','e','r','','!!']
 
     useEffect(() => {
            
@@ -27,8 +29,14 @@ const Home = () => {
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                <span className={letterClass}>H</span>
-                <span className={ `${letterClass} _12`}>i,</span> 
+                <span className={ `${letterClass} _12`}>Hey</span>
+                <span className={ `${letterClass} _12`}>,,</span>
+                <span className={ `${letterClass} _12`}>T</span>
+                <span className={ `${letterClass} _12`}>h</span>
+                <span className={ `${letterClass} _12`}>e</span>
+                <span className={ `${letterClass} _12`}>r</span>
+                <span className={ `${letterClass} _12`}>e</span>
+
                 <br/>
                 <span className={ `${letterClass} _13`}>I</span> 
                 <span className={ `${letterClass} _14`}>'m</span> 
@@ -42,11 +50,14 @@ const Home = () => {
                 idx={21}/>
                 </h1>
 
-                <h2>Engineer !!!</h2>
-
+                <h2>Full Stack Web and App Developer !!</h2>
+                
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
-            <Logo />
+            <Card />    
+
+        
+            {/*<Logo />*/}
         </div>
         <Loader type='ball-beat' />
         </>
