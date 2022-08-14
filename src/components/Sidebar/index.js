@@ -1,18 +1,14 @@
-import { Link, NavLink } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 import './index.scss';
 //import LogoW from '../../assets/images/logo-w.png';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
+//import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faEnvelope,faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
     <div className="nav-bar">
-        <Link className="logo" to="/">
-            <img src="https://triacies.com/wp-content/uploads/2018/04/Letter-A-Logo.jpg" alt="logo" />
-            <img className ="sub-logo" src="./aravind.png" alt="logo" />
-        </Link>
-
+        
         <nav>
             <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
@@ -24,6 +20,10 @@ const Sidebar = () => (
 
             <NavLink exact="true" activeclassname="active" className= "contact-link" to="/contact">
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            </NavLink>
+
+            <NavLink exact="true" activeclassname="active" className= "graduation" to="/Deed">
+                <FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e" />
             </NavLink>
 
         </nav>
